@@ -19,3 +19,8 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+## tomorrow! inject images, don't make them attributes. unholy madness
+import graphy from '../assets/graphy.png';
+:style="{ backgroundImage: 'url(\'' + graphy + '\')' }"
