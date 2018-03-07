@@ -1,21 +1,91 @@
 <template>
 <div class="hello">
-  <img :src="require('../assets/proj2.png')" />
   <div>
     <h1>{{ msg }}</h1>
     <h2 class="mb-5">{{ msg2 }}</h2>
     <h2 class="mauvey">Product Portfolio</h2>
     <div class="p-1 m-3">
-      <!-- iterate over a list -->
+      <!-- ideally, iterate over a list -->
+      <!-- until the Webpack vs img src interpolation is grokked, doing these cards manually ;_; -->
       <ul class="card-deck">
-        <li v-for="product in products" v-bind:key="product"
-        class="card p-3">
-        <a :href="product.p_url">
-          <h4>{{ product.p_title }}</h4>
-          <img :src="product.p_image" />
-          <span class="badge">{{ product.p_tech }}</span>
-          <span class="badge">{{ product.p_tool }}</span>
-          <h6>{{ product.p_desc }}</h6>
+        <!-- proj #1 -->
+        <li class="card p-3">
+        <a href="https://fwt-helper.firebaseapp.com/">
+          <p>
+            <h4>How To Mine Crypto</h4>
+            <img class="card-image" src="../../static/proj1.png" />
+          </p>
+          <span class="card p-1 bg-badge">Bootstrap, Material Design </span>
+          <span class="card p-1 bg-badge">Google DataStudio </span>
+          <h6>Lightweight tutorial built at high speed with the derring MDBootstrap micro-framework.</h6>
+          <h6>Focus on cross browser and responsive design.</h6>
+        </a>
+        </li>
+        <!-- proj #2 -->
+        <li class="card p-3">
+        <a href="https://fwt-helper.firebaseapp.com/">
+          <p>
+            <h4>Fantasy War Tactics Helper</h4>
+            <img class="card-image" src="../../static/proj2.png" />
+          </p>
+          <span class="card p-1 bg-badge">Angular2</span>
+          <span class="card p-1 bg-badge">pixlr</span>
+          <h6>Helps sort an army of characters into tactical teams.</h6>
+          <h6>Dropdowns filter a NoSQL dataset which Angular makes into arrays.</h6>
+          <h6>Slicing a flat dataset can work as well as a relational database.</h6>
+        </a>
+        </li>
+        <!-- proj #3 -->
+        <li class="card p-3">
+        <a href="https://fwt-helper.firebaseapp.com/">
+          <p>
+            <h4>Font Awesome Cards</h4>
+            <img class="card-image" src="../../static/proj3.png" />
+          </p>
+          <span class="card p-1 bg-badge">VueJS</span>
+          <span class="card p-1 bg-badge">Sass</span>
+          <h6>Sandbox for exploring CSS effects applied to the ubiquitous Font Awesome library.</h6>
+          <h6>Displays usable code for the effects you create.</h6>
+        </a>
+        </li>
+        <!-- proj #4 -->
+        <li class="card p-3">
+        <a href="https://colors-crypto.firebaseapp.com/">
+          <p>
+            <h4>Colors of Crypto</h4>
+            <img class="card-image" src="../../static/proj4.png" />
+          </p>
+          <span class="card p-1 bg-badge">React</span>
+          <span class="card p-1 bg-badge">widgets</span>
+          <h6>Dashboard of the top crypto currencies with market values and capitalization.</h6>
+          <h6>Live values from script loading a widget. Color branding sometimes based upon existing design.</h6>
+        </a>
+        </li>
+        <!-- proj #5 -->
+        <li class="card p-3">
+        <a href="">
+          <p>
+            <h4>Terraforma</h4>
+            <img class="card-image" src="../../static/proj5.png" />
+          </p>
+          <span class="card p-1 bg-badge">Sketch</span>
+          <span class="card p-1 bg-badge">InVision</span>
+          <h6>Group project from code bootcamp.</h6>
+          <h6>I created visual assets and written copy for the mockup, as well as initial concept.</h6>
+        </a>
+        </li>
+        <!-- proj #6 -->
+        <li class="card p-3">
+        <a href="https://strangerthings-questionboard.pagefrontapp.com/">
+          <p>
+            <h4>Answer My Question</h4>
+            <img class="card-image" src="../../static/proj6.png" />
+          </p>
+          <span class="card p-1 bg-badge">EmberJS</span>
+          <span class="card p-1 bg-badge">GPC firebase</span>
+          <h6>Simple forum built as a learning exercise with EmberJS.</h6>
+          <h6>Uses Firebase as cloud data service vs a database server.</h6>
+          <h6>Could do with an update to include Season 2!</h6>
         </a>
         </li>
       </ul>
@@ -24,41 +94,44 @@
     <h2 class="raisiny">Crypto~currency</h2>
     <div class="card p-1 m-3">
       <p>Yes, I mine it. Yes, I own it. Yes, I trade it.</p>
-      <p>You can, too.</p>
+      <h5>You can, too!</h5>
       <p>Click here to learn more.</p>
     </div>
-
     <!-- social links -->
     <h2 class="bg-info">Links to More</h2>
     <ul class="">
-      <li class="card p-1 m-3"><i class="fas fa-book"></i>
-        <a
-          href=""
-          target="_blank"
-        >
+        <!-- resume -->
+        <a href="" target="_blank">
+        <li class="card m-3 p-3 social-icon">
+          <i class="far fa-file"></i>
+          <h6>resume
+          </h6>
+        </li>
         </a>
-      </li>
-      <li class="card p-1 m-3"><i class="fas fa-heart"></i>
-        <a
-          href=""
-          target="_blank"
-        >
+        <!-- GH -->
+        <a href="https://github.com/Adjectival" target="_blank">
+        <li class="card m-3 p-3 social-icon">
+          <i class="fab fa-github"></i>
+          <h6>sources
+          </h6>
+        </li>
         </a>
-      </li>
-      <li class="card p-1 m-3"><i class="fab fa-github"></i>
-        <a
-          href=""
-          target="_blank"
-        >
+        <!-- linkedin -->
+        <a href="https://www.linkedin.com/in/alexander-jacks" target="_blank">
+        <li class="card m-3 p-3 social-icon">
+          <i class="fab fa-linkedin-in"></i>
+          <h6>network
+          </h6>
+        </li>
         </a>
-      </li>
-      <li class="card p-1 m-3"><i class="fab fa-twitter"></i>
-        <a
-          href=""
-          target="_blank"
-        >
+        <!-- insta -->
+        <a href="https://www.instagram.com/a.d.jacks/" target="_blank">
+        <li class="card m-3 p-3 social-icon">
+          <i class="fab fa-instagram"></i>
+          <h6>pics
+          </h6>
+        </li>
         </a>
-      </li>
     </ul>
     <!-- counter w/ interpolation -->
     <div class="">
@@ -66,16 +139,15 @@
         Up counter <i class="fas fa-arrow-up"></i>
       </button>
       <span class="h4">
-        Counter at {{counter}} times
+        Stateless counter at {{counter}} times
       </span>
       <button class="btn btn-secondary my-2" v-on:click="counter--">
         Down counter <i class="fas fa-arrow-down"></i>
       </button>
       <p class="">
-        How many high can it go?
+        How high can it go?
       </p>
     </div>
-
   </div>
 </div>
 </template>
@@ -87,51 +159,6 @@ export default {
     return {
       msg: 'Web Design & Cryptocurrency Consultation',
       msg2: 'Alexander Jacks Services',
-      // iterate over a list
-      products: [
-        { p_title: 'How To Mine Crypto',
-          p_image: '../assets/proj1.png',
-          p_url: 'https://fwt-helper.firebaseapp.com/',
-          p_tech: 'Bootstrap, Material Design',
-          p_tool: 'Google DataStudio',
-          p_desc: 'Lightweight tutorial built at high speed with the derring MDBootstrap micro-framework. Focus on cross browser and responsive design.',
-        },
-        { p_title: 'Fantasy War Tactics Helper',
-          p_image: '../assets/proj2.png',
-          p_url: 'https://fwt-helper.firebaseapp.com/',
-          p_tech: 'Angular2',
-          p_tool: 'pixlr',
-          p_desc: 'Helps sort an army of characters into tactical teams. Dropdowns filter a NoSQL dataset that Angular transforms into object arrays. Slicing a flat dataset can work as well as a relational database.',
-        },
-        { p_title: 'Font Awesome Cards',
-          p_image: '../assets/proj3.png',
-          p_url: 'https://fwt-helper.firebaseapp.com/',
-          p_tech: 'VueJS',
-          p_tool: 'Sass',
-          p_desc: 'Sandbox for exploring CSS effects in the ubiquitous Font Awesome library. Displays usable code for the effects you create.',
-        },
-        { p_title: 'Colors of Crypto',
-          p_image: '../assets/proj4.png',
-          p_url: 'https://colors-crypto.firebaseapp.com/',
-          p_tech: 'React',
-          p_tool: 'widgets',
-          p_desc: 'Dashboard of the top crypto currencies with market values and capitalization. Descriptive icons from Font Awesome. Live values from script loading a widget. Color branding sometimes based upon existing design.',
-        },
-        { p_title: 'Terraforma',
-          p_image: '../assets/proj5.png',
-          p_url: 'https://fwt-helper.firebaseapp.com/',
-          p_tech: 'Sketch',
-          p_tool: 'InVision',
-          p_desc: 'Group project from code bootcamp. I created visual assets and written copy for the portfolio mockup, as well as initial concept.',
-        },
-        { p_title: 'Answer My Question',
-          p_image: '../assets/proj6.png',
-          p_url: 'https://strangerthings-questionboard.pagefrontapp.com/',
-          p_tech: 'EmberJS',
-          p_tool: 'GPC firebase',
-          p_desc: 'Went overboard on the styling because I love this show and Ember is fun and useful. Uses Firebase as cloud data service vs a database server. Could do with an update to include Season 2!',
-        },
-      ],
       // Two-way data binding
       input_val: '',
       // counter w/ interpolation
@@ -168,7 +195,23 @@ li {
 }
 .card {
   margin-bottom: 1rem;
+  background-color: snow;
 }
+.card:hover{
+  background-color: white;
+}
+.card-image {
+  max-width: 14vw;
+
+}
+.bg-badge {
+  background-color: #ccc;
+}
+.social-icon {
+  font-size: 3rem;
+  border-radius: 1rem;
+}
+
 h2 {
   color: #2e120b;
   padding-bottom: 3px;
@@ -176,6 +219,13 @@ h2 {
 }
 a {
   color: #d62291;
+  text-decoration: none;
+}
+a:hover{
+  color:navy;
+}
+a:active{
+  color:aqua;
 }
 
 
