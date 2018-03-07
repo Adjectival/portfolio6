@@ -1,5 +1,6 @@
 <template>
 <div class="hello">
+  <img :src="require('../assets/proj2.png')" />
   <div>
     <h1>{{ msg }}</h1>
     <h2 class="mb-5">{{ msg2 }}</h2>
@@ -20,10 +21,11 @@
       </ul>
     </div>
     <!-- crypto zone -->
-    <h2 class="raisiny">Crypto ~ currency</h2>
+    <h2 class="raisiny">Crypto~currency</h2>
     <div class="card p-1 m-3">
       <p>Yes, I mine it. Yes, I own it. Yes, I trade it.</p>
-      <p>Yes, you can, too.</p>
+      <p>You can, too.</p>
+      <p>Click here to learn more.</p>
     </div>
 
     <!-- social links -->
@@ -87,47 +89,47 @@ export default {
       msg2: 'Alexander Jacks Services',
       // iterate over a list
       products: [
-        { p_title: 'Fantasy War Tactics Helper',
-          p_image: '../assets/p_image_coc.png',
-          p_url: 'https://fwt-helper.firebaseapp.com/',
-          p_tech: 'Angular2',
-          p_tool: 'pixlr',
-          p_desc: 'Helps sort the large army of characters in the game Fantasy War Tactics-R by Nexon. Dropdown menus filter a NoSQL dataset that Angular transforms into object arrays. Slicing a flat dataset can work as well as a relational database.',
-        },
-        { p_title: 'Font Awesome Cards',
-          p_image: '../assets/p_image_coc.png',
-          p_url: 'https://fwt-helper.firebaseapp.com/',
-          p_tech: 'VueJS',
-          p_tool: 'Sass',
-          p_desc: 'Sanbox for exploring CSS effects in the ubiquitous Font Awesome library. Exports usable code for the effects you create.',
-        },
-        { p_title: 'Colors of Crypto',
-          p_image: '../assets/p_imagecoc.png',
-          p_url: 'https://colors-crypto.firebaseapp.com/',
-          p_tech: 'React',
-          p_tool: 'widgets',
-          p_desc: 'Dashboard of the top crypto currencies and their market values and capitalization. Descriptive icons from Font Awesome. Live values from script loading a widget. Color branding sometimes based upon existing design.',
-        },
-        { p_title: 'MDB dashboard w google infographic',
-          p_image: '../assets/p_imagecoc.png',
+        { p_title: 'How To Mine Crypto',
+          p_image: '../assets/proj1.png',
           p_url: 'https://fwt-helper.firebaseapp.com/',
           p_tech: 'Bootstrap, Material Design',
           p_tool: 'Google DataStudio',
-          p_desc: 'Lightweight dashboard prototype built at high speed with the derring MDBootstrap micro-framework.',
+          p_desc: 'Lightweight tutorial built at high speed with the derring MDBootstrap micro-framework. Focus on cross browser and responsive design.',
+        },
+        { p_title: 'Fantasy War Tactics Helper',
+          p_image: '../assets/proj2.png',
+          p_url: 'https://fwt-helper.firebaseapp.com/',
+          p_tech: 'Angular2',
+          p_tool: 'pixlr',
+          p_desc: 'Helps sort an army of characters into tactical teams. Dropdowns filter a NoSQL dataset that Angular transforms into object arrays. Slicing a flat dataset can work as well as a relational database.',
+        },
+        { p_title: 'Font Awesome Cards',
+          p_image: '../assets/proj3.png',
+          p_url: 'https://fwt-helper.firebaseapp.com/',
+          p_tech: 'VueJS',
+          p_tool: 'Sass',
+          p_desc: 'Sandbox for exploring CSS effects in the ubiquitous Font Awesome library. Displays usable code for the effects you create.',
+        },
+        { p_title: 'Colors of Crypto',
+          p_image: '../assets/proj4.png',
+          p_url: 'https://colors-crypto.firebaseapp.com/',
+          p_tech: 'React',
+          p_tool: 'widgets',
+          p_desc: 'Dashboard of the top crypto currencies with market values and capitalization. Descriptive icons from Font Awesome. Live values from script loading a widget. Color branding sometimes based upon existing design.',
         },
         { p_title: 'Terraforma',
-          p_image: '../assets/p_imagecoc.png',
+          p_image: '../assets/proj5.png',
           p_url: 'https://fwt-helper.firebaseapp.com/',
           p_tech: 'Sketch',
           p_tool: 'InVision',
           p_desc: 'Group project from code bootcamp. I created visual assets and written copy for the portfolio mockup, as well as initial concept.',
         },
         { p_title: 'Answer My Question',
-          p_image: '../assets/p_imagecoc.png',
+          p_image: '../assets/proj6.png',
           p_url: 'https://strangerthings-questionboard.pagefrontapp.com/',
           p_tech: 'EmberJS',
           p_tool: 'GPC firebase',
-          p_desc: 'Went overboard on the styling because I love this show and Ember is fun. Uses Firebase as cloud data service vs a database server. Could do with an update to include Season 2!',
+          p_desc: 'Went overboard on the styling because I love this show and Ember is fun and useful. Uses Firebase as cloud data service vs a database server. Could do with an update to include Season 2!',
         },
       ],
       // Two-way data binding
