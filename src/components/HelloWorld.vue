@@ -63,29 +63,15 @@
         </li>
         <!-- proj #5 -->
         <li class="card p-3">
-        <a href="">
+        <a href="https://adjectival.github.io/terra_forma/">
           <p>
             <h4>Terraforma</h4>
-            <img class="card-image" src="../../static/proj5.png" />
+            <img class="tf-image" src="../../static/proj5.png" />
           </p>
           <span class="card p-1 bg-badge">Sketch</span>
           <span class="card p-1 bg-badge">InVision</span>
-          <h6>Group project from code bootcamp.</h6>
+          <h6>Group design case study from code bootcamp.</h6>
           <h6>I created visual assets and written copy for the mockup, as well as initial concept.</h6>
-        </a>
-        </li>
-        <!-- proj #6 -->
-        <li class="card p-3">
-        <a href="https://strangerthings-questionboard.pagefrontapp.com/">
-          <p>
-            <h4>Answer My Question</h4>
-            <img class="card-image" src="../../static/proj6.png" />
-          </p>
-          <span class="card p-1 bg-badge">EmberJS</span>
-          <span class="card p-1 bg-badge">GPC firebase</span>
-          <h6>Simple forum built as a learning exercise with EmberJS.</h6>
-          <h6>Uses Firebase as cloud data service vs a database server.</h6>
-          <h6>Could do with an update to include Season 2!</h6>
         </a>
         </li>
       </ul>
@@ -99,9 +85,9 @@
     </div>
     <!-- social links -->
     <h2 class="bg-info">Links to More</h2>
-    <ul class="">
+    <ul>
         <!-- resume -->
-        <a href="" target="_blank">
+        <a href="https://goo.gl/29sKXN" target="_blank">
         <li class="card m-3 p-3 social-icon">
           <i class="far fa-file"></i>
           <h6>resume
@@ -202,7 +188,9 @@ li {
 }
 .card-image {
   max-width: 14vw;
-
+}
+.tf-image {
+  max-width: 30vw;
 }
 .bg-badge {
   background-color: #ccc;

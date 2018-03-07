@@ -1,6 +1,5 @@
-# vue2nd
-
-> A Vue.js project
+# vue Portfolio
+A vue-cli project
 
 ## Build Setup
 
@@ -14,13 +13,13 @@ npm run dev
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
+# deploy to firebase
+firebase init
+'hosting'
+'dist' as prod dir
+'Y' to SPA
+npm run build
+firebase deploy
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-
-## tomorrow! inject images, don't make them attributes. unholy madness
-import graphy from '../assets/graphy.png';
-:style="{ backgroundImage: 'url(\'' + graphy + '\')' }"
