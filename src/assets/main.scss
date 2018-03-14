@@ -1,0 +1,86 @@
+.hello {
+  background: linear-gradient(to top, gainsboro, azure);
+  padding-top: 4rem;
+  height: 100%;
+}
+h1, h2, h6 {
+  font-weight: normal;
+}
+h2 {
+  color: #2e120b;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+a {
+  color: #d62291;
+    &:hover{
+    color:navy;
+    text-decoration: none;
+    }
+    a:active{
+    color:aqua;
+    text-decoration: none;
+    }
+}
+.mauvey {
+  background-color: #ac54a1;
+  color: azure;
+}
+.raisiny {
+  background-color: #2e120b;
+  color: snow;
+}
+.embossed {
+  text-shadow: 2px 4px 3px rgba(200,0,0,0.3);
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+// project cards
+.card {
+  margin-bottom: 1rem;
+  background-color: snow;
+}
+.card:hover{
+  background-color: white;
+}
+.card-image {
+  max-width: 14vw;
+}
+.tf-image {
+  max-width: 30vw;
+}
+// crypto btn
+.btn-secondary {
+    border-radius: 3rem;
+    animation: bg-colors-cycle 4s infinite;
+}
+@keyframes bg-colors-cycle  {
+    0% { background: azure;}
+    25% { background: gainsboro;}
+    50% { background: snow;}
+    75% { background: gainsboro;}
+    100% { background: azure;}
+}
+// social cards
+.bg-badge {
+  background-color: #bbb;
+}
+.social-icon {
+  font-size: 3rem;
+  border-radius: 1rem;
+  background: #ddd;
+  animation: gray-cycle 3s infinite;
+}
+@keyframes gray-cycle  {
+    0% { background: #ddd;}
+    50% { background: #fff;}
+    100% { background: #ddd;}
+}

@@ -1,7 +1,7 @@
 <template>
 <div class="hello">
   <div>
-    <h1>{{ msg }}</h1>
+    <h1 class="embossed">{{ msg }}</h1>
     <h2 class="mb-5">{{ msg2 }}</h2>
     <h2 class="mauvey">Product Portfolio</h2>
     <div class="p-1 m-3">
@@ -16,7 +16,7 @@
             <img class="card-image" src="../../static/proj1.png" />
           </p>
           <span class="badge p-1 bg-badge">Bootstrap, Material Design </span>
-          <span class="badge p-1 bg-badge">Google DataStudio </span>
+          <span class="badge p-1 bg-badge">Font Awesome </span>
           <h6 class="mt-2">Lightweight tutorial built at high speed with the handy MDBootstrap micro-framework.</h6>
           <h6>Focus on cross browser and responsive design.</h6>
         </a>
@@ -35,8 +35,8 @@
           <h6>Slicing a flat dataset can work as well as a relational database.</h6>
         </a>
         </li>
-  
-        <!-- proj #4 -->
+
+        <!-- proj #3 -->
         <li class="card p-3">
         <a href="https://colors-crypto.firebaseapp.com/">
           <p>
@@ -49,7 +49,7 @@
           <h6>Live values from script loading a widget. Color branding sometimes based upon existing design.</h6>
         </a>
         </li>
-        <!-- proj #5 -->
+        <!-- proj #4 -->
         <li class="card p-3">
         <a href="https://adjectival.github.io/terra_forma/">
           <p>
@@ -71,55 +71,71 @@
       <h5>You can, too!</h5>
       <a href="https://how-to-crypto.herokuapp.com/">
       <button class="btn btn-lg btn-secondary">
-        <h4>Click here to learn more.</h4>
+        <h4 class="p-1">Click Here to Learn More</h4>
       </button>
       </a>
     </div>
-    <!-- social links -->
     <h2 class="bg-info">Links to More</h2>
-    <ul>
+    <!-- social links -->
+    <ul class="card-deck offset-3 col-6">
         <!-- resume -->
-        <a href="https://goo.gl/29sKXN" target="_blank">
-        <li class="card m-3 p-3 social-icon">
-          <i class="far fa-file"></i>
+        <a href="https://docs.google.com/document/d/1DEiZsO13IoLtAhtvzmoPXhWmEltpavy1KebbHRPX3ZE/edit?usp=sharing" target="_blank">
+        <li class="card m-3 p-4 social-icon">
+          <i class="far fa-file mx-auto pb-2"></i>
           <h6>resume
           </h6>
         </li>
         </a>
         <!-- GH -->
         <a href="https://github.com/Adjectival" target="_blank">
-        <li class="card m-3 p-3 social-icon">
-          <i class="fab fa-github"></i>
+        <li class="card m-3 p-4 social-icon">
+          <i class="fab fa-github mx-auto pb-2"></i>
           <h6>code
           </h6>
         </li>
         </a>
         <!-- linkedin -->
         <a href="https://www.linkedin.com/in/alexander-jacks" target="_blank">
-        <li class="card m-3 p-3 social-icon">
-          <i class="fab fa-linkedin-in"></i>
+        <li class="card m-3 p-4 social-icon">
+          <i class="fab fa-linkedin-in mx-auto pb-2"></i>
           <h6>network
           </h6>
         </li>
         </a>
         <!-- insta -->
         <a href="https://www.instagram.com/a.d.jacks/" target="_blank">
-        <li class="card m-3 p-3 social-icon">
-          <i class="fab fa-instagram"></i>
+        <li class="card m-3 p-4 social-icon">
+          <i class="fab fa-instagram mx-auto pb-2"></i>
           <h6>pics
+          </h6>
+        </li>
+        </a>
+        <!-- twitter -->
+        <a href="https://twitter.com/archdukej" target="_blank">
+        <li class="card m-3 p-4 social-icon">
+          <i class="fab fa-twitter mx-auto pb-2"></i>
+          <h6>views
+          </h6>
+        </li>
+        </a>
+        <!-- freedom bomb -->
+        <a href="https://www.facebook.com/alexanderd.jacks" target="_blank">
+        <li class="card m-3 p-4 social-icon">
+          <i class="fab fa-facebook mx-auto pb-2"></i>
+          <h6>friends
           </h6>
         </li>
         </a>
     </ul>
     <!-- counter w/ interpolation -->
     <div class="">
-      <button class="btn btn-secondary my-2" v-on:click="counter++">
+      <button class="btn btn-counter my-2" v-on:click="counter++">
         Up counter <i class="fas fa-arrow-up"></i>
       </button>
       <span class="h4">
         Stateless counter at {{counter}} times
       </span>
-      <button class="btn btn-secondary my-2" v-on:click="counter--">
+      <button class="btn btn-counter my-2" v-on:click="counter--">
         Down counter <i class="fas fa-arrow-down"></i>
       </button>
       <p class="">
@@ -147,67 +163,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.hello {
-  background: linear-gradient(to top, gainsboro, azure);
-
-  padding-top: 4rem;
-  height: 100%;
-}
-h1, h2 {
-  font-weight: normal;
-}
-.mauvey {
-  background-color: #ac54a1;
-}
-.raisiny {
-  background-color: #2e120b;
-  color: snow;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-.card {
-  margin-bottom: 1rem;
-  background-color: snow;
-}
-.card:hover{
-  background-color: white;
-}
-.card-image {
-  max-width: 14vw;
-}
-.tf-image {
-  max-width: 30vw;
-}
-.bg-badge {
-  background-color: #ccc;
-}
-.social-icon {
-  font-size: 3rem;
-  border-radius: 1rem;
-}
-
-h2 {
-  color: #2e120b;
-  padding-bottom: 3px;
-  padding-top: 3px;
-}
-a {
-  color: #d62291;
-  text-decoration: none;
-}
-a:hover{
-  color:navy;
-}
-a:active{
-  color:aqua;
-}
-
-
+<style lang="scss">
+    @import "../assets/main.scss";
 </style>
