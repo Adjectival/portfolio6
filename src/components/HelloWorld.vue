@@ -3,6 +3,7 @@
   <div>
     <h1 class="embossed">{{ msg }}</h1>
     <h2 class="mb-5">{{ msg2 }}</h2>
+
     <h2 class="mauvey">Product Portfolio</h2>
     <div class="p-1 m-3">
       <!-- ideally, iterate over a list -->
@@ -41,7 +42,7 @@
         <a href="https://colors-crypto.firebaseapp.com/">
           <p>
             <h4>Colors of Crypto</h4>
-            <img class="card-image" src="../../static/proj4.png" />
+            <img class="card-image" src="../../static/proj3.png" />
           </p>
           <span class="badge p-1 bg-badge">React</span>
           <span class="badge p-1 bg-badge">widgets</span>
@@ -54,7 +55,7 @@
         <a href="https://adjectival.github.io/terra_forma/">
           <p>
             <h4>Terraforma</h4>
-            <img class="tf-image" src="../../static/proj5.png" />
+            <img class="tf-image" src="../../static/proj4.png" />
           </p>
           <span class="badge p-1 bg-badge">Sketch</span>
           <span class="badge p-1 bg-badge">InVision</span>
@@ -64,8 +65,9 @@
         </li>
       </ul>
     </div>
-    <!-- crypto zone -->
+
     <h2 class="raisiny">Crypto~currency</h2>
+    <!-- crypto zone -->
     <div class="card py-3 m-3">
       <p>Yes, I mine it. Yes, I own it. Yes, I trade it.</p>
       <h5>You can, too!</h5>
@@ -75,9 +77,13 @@
       </button>
       </a>
     </div>
+
     <h2 class="bg-info">Links to More</h2>
     <!-- social links -->
-    <ul class="card-deck offset-3 col-6">
+    <ul class="card-deck
+    offset-1 col-10
+    offset-md-3 col-md-6
+    ">
         <!-- resume -->
         <a href="https://docs.google.com/document/d/1DEiZsO13IoLtAhtvzmoPXhWmEltpavy1KebbHRPX3ZE/edit?usp=sharing" target="_blank">
         <li class="card m-3 p-4 social-icon">

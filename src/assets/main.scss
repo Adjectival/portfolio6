@@ -71,16 +71,21 @@ li {
 }
 // social cards
 .bg-badge {
-  background-color: #bbb;
+    background-color: #bbb;
 }
 .social-icon {
-  font-size: 3rem;
-  border-radius: 1rem;
-  background: #ddd;
-  animation: gray-cycle 3s infinite;
+    font-size: 3rem;
+    border-radius: 1rem;
+    background: #ddd;
+    animation: gray-cycle 3s infinite;
 }
 @keyframes gray-cycle  {
     0% { background: #ddd;}
     50% { background: #fff;}
     100% { background: #ddd;}
+}
+
+// counter btns
+.btn-counter {
+    border-radius: 3rem;
 }
